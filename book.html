@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <section style="text-align: center; "> 
+
+        <div class="abc" style=" width: 100%; height: 600px;">
+                <!-- start of sticky -->
+                
+                        <video autoplay muted loop id="myVideo">
+                            <source src="pics/vid3.mp4" type="video/mp4">
+                        </video>
+                        
+                        <div class="headerStick" id="navbar">
+                    <section class="border clearfix space" >
+                        <div class="logo">
+                            <img src="pics/logo3.png" />
+                        </div>
+                        <div class="clearfix nav1">
+                            
+                            <ul class="nav clear" >
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="packages.html">Packages</a></li>
+                                <li class="active"><a href="book.html">Booking</a></li>
+                                <li><a href="tourGuide.html">Tour guide</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>   
+
+                <div class="bantxt" >
+                    <h3 style="color: white; text-shadow: 0px 0px 8px black;">Become part of an Unforgettable Journey</h3>
+                    <h1 class="heading">Book your adventure<br>Today</h1>
+                </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h1 style=" text-align: center; margin-top: 5%;">Online Reservation at <span style="color:#137558;">Travel.</span></h1>
+        <form name="myForm" onsubmit="submitForm()" id="myForm" class="space form" action="/action_page.php" >
+
+                <div class="col1" >
+                    <label for="fname" style="display: block; float: left; margin-bottom: 2%; ">Full Name </label>
+                    <input type="text" id="fname" class="input clear" placeholder="Enter your name" required />
+                </div>
+
+                <div class="col2">
+                    <label for="email" style="display: block; float: left; margin-bottom: 2%;">Email </label>
+                    <input id="email" type="email" class="input clear" placeholder="Enter email address" required />
+                </div>
+
+                <div class="col1" >
+                    <label for="number" style="display: block; float: left; margin-bottom: 2%; ">Phone Number</label>
+                    <input type="number" id="number" class="input clear" placeholder="Enter your phone number "  required/>
+                </div>
+
+                <div class="col2" >
+                    <label for="guests" style="display: block; float: left; margin-bottom: 2%;">No. Of Guests </label>
+                    <input id="guests" type="number" class="input clear" placeholder="How many guests" required />
+                </div>
+
+                <div class="col1" >
+                    <label for="text" style="display: block; float: left; margin-bottom: 2%; ">Places</label>
+                    <input type="text" id="places" class="input clear" placeholder="Places that you want to visit" required />
+                </div>
+
+                <div class="col2" >
+                    <label for="address" style="display: block; float: left; margin-bottom: 2%;">Address </label>
+                    <input id="address" type="text" class="input clear" placeholder="Enter address" required >
+                </div>
+
+                <div class="col1" style="margin-bottom: 2%;" >
+                    <label for="date" style="display: block; float: left; margin-bottom: 2%; ">Arrival Date</label>
+                    <input type="date" id="arrivalDate" class="input clear" required />
+                </div>
+
+                <div class="col2" style="margin-bottom: 2%;" >
+                    <label for="date" style="display: block; float: left; margin-bottom: 2%; ">Departure Date</label>
+                    <input type="date" id="departureDate" class="input clear" required />
+                </div>
+
+                <button type="submit" onclick="submitForm()" class="btn2" >Submit</button>
+        </form>
+    </section>
+    
+
+    <footer class="clear">
+        <div style="display: flex; flex-direction: row; width: 90%; margin: 0 5%;">
+            <div class="foot">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none; " >Home</a></li>
+                    <li><a href="about.html" style="text-decoration: none; ">About</a></li>
+                    <li><a href="packages.html" style="text-decoration: none; ">Package</a></li>
+                    <li><a href="book.html" style="text-decoration: none;">Booking</a></li>
+                </ul>
+            </div>
+    
+            <div class="foot">
+                <h3>Extra Links</h3>
+                <ul>
+                    <li><a>Need Help?</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Privacy Policy</a></li>
+                    <li><a>Terms Of Use</a></li>
+                </ul>
+            </div>
+    
+            <div class="foot">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a>123-453-1111</a></li>
+                    <li><a>321-777-3333</a></li>
+                    <li><a>abc@gmail.com</a></li>
+                    <li><a>lhr, pk</a></li>
+                </ul>
+            </div>
+    
+            <div class="foot">
+                <h3>Socials</h3>
+                <ul>
+                    <li> <i class="fa fa-facebook"></i><a> Facebook</a> </li>
+                    <li> <i class="fa fa-twitter"></i><a> Twitter</a> </li>
+                    <li> <i class="fa fa-instagram"></i><a> Instagram</a></li>
+                    <li> <i class="fa fa-whatsapp"></i><a> Whatsapp</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border: 1px solid; text-align: center; width: 90%;">
+        <p style="text-align: center;">abc @ xyz, lmp</p>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
